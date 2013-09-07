@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Community:R-We!</title>
+    </head>
+
+    <body>
+        <h1>Community:R-We!</h1>
+
+        <ul></ul>
+
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.1.0/tabletop.min.js"></script>
+        <script>
+            $(function() {
+                // Erklaerung von Tabletop: https://github.com/jsoma/tabletop 
+                // Erklaerung zu jQuery: http://api.jquery.com/jQuery/
+
+                Tabletop.init({
+                    key: '0Ajs-ycrXuoTidEhSbnFTWU9ydFp2dHg1Y21CbUJ6R3c',
+                    callback: showData,
+                    simpleSheet: true }
+                );
+
+                function showData(data) {
+                    $.each(data, function(i, e) {
+                        console.log(i, e);
+                        $('ul').append('<li><b>Name: ' + e.deinname + '</b> (' + e.deingeschlecht + ')</li>');
+                    });    
+                }
+                
+            });
+
+            
+        </script>
+    </body>
+</html>
+
