@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Community:R-We!</title>
+	<meta charset="UTF-8">
     </head>
 
     <body>
@@ -26,7 +27,7 @@ Fuellen sie dieses <a href="https://docs.google.com/forms/d/1W4mSSOaubrjb46BTYBz
                 function showData(data) {
                     $.each(data, function(i, e) {
                         console.log(i, e);
-                        $('table').append('<tr><td>' + e.deinname + '</td><td>'+ e.deingeschlecht + '</td></tr>');
+                        $('table').append('<tr><td>' + e.deinname + '</td><td>'+ e.deingeschlecht + '</td><td>' + e.kontaktmöglichkeitsonstnochwas + '</td></tr>');
                     });    
                 }
                 
