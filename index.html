@@ -2,13 +2,17 @@
     <head>
         <title>Community:R-We!</title>
 	<meta charset="UTF-8">
+	<style type="text/css"> 
+		table{width:100%;}
+		td {border:1px solid #000;}
+	</style>
     </head>
 
     <body>
-        <h1>Community:R-We!</h1>
+        <img src="community_r_we.png" alt="Community:R-We!" />
 
        
-Fuellen sie dieses <a href="https://docs.google.com/forms/d/1W4mSSOaubrjb46BTYBzCZ9cfiGCvU-GNslUmMZgY0mU/viewform">Formular</a> aus um dein Name in die Tabelle darunter hinzuzufuegen.
+<p>Füllen sie dieses <a href="https://docs.google.com/forms/d/1W4mSSOaubrjb46BTYBzCZ9cfiGCvU-GNslUmMZgY0mU/viewform">Formular</a> aus um ihre Name in die Tabelle darunter hinzuzufügen.</p>
 <table></table>
 
         <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -27,7 +31,7 @@ Fuellen sie dieses <a href="https://docs.google.com/forms/d/1W4mSSOaubrjb46BTYBz
                 function showData(data) {
                     $.each(data, function(i, e) {
                         console.log(i, e);
-                        $('table').append('<tr><td>' + e.deinname + '</td><td>'+ e.deingeschlecht + '</td><td>' + e.kontaktmöglichkeitsonstnochwas + '</td></tr>');
+                        $('table').append('<tr><td>' + e.deinname + '</td><td>'+ e.deinalter + '</td><td>'+ e.deingeschlecht + '</td><td>' + e.vonwokommstdu + '</td><td>'+ e.vonwokommstdugenau + '</td><td>'+ e.wasistdeinhauptinteresse + '</td><td>'+ e.kontaktmöglichkeitsonstnochwas + '</td><td>'+  e.wassinddeineinteressen + '</td></tr>');
                     });    
                 }
                 
